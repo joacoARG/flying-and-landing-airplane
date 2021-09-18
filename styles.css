@@ -13,14 +13,14 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #034071;
+  background-color: #037109;
 }
 
 section .runway {
   position: relative;
   width: 400px;
   height: 100vh;
-  background: #1378bc;
+  background: #353738;
   border-left: 20px solid rgba(0, 0, 0, 0.25);
   border-right: 20px solid rgba(0, 0, 0, 0.25);
   transition: transform 1s;
