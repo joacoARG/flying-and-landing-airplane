@@ -19,6 +19,15 @@ section .runway {
   background: #1378bc;
   border-left: 20px solid rgba(0, 0, 0, 0.25);
   border-right: 20px solid rgba(0, 0, 0, 0.25);
+  transition: transform 1s;
+  transition-delay: 1s;
+  transform-origin: top;
+}
+
+section:active .runway {
+  transform: scaleX(0.7) scaleY(0);
+  transition-delay: 0s;
+  transform-origin: bottom;
 }
 
 section .runway::before {
@@ -50,4 +59,18 @@ section:active .runway::before {
   100% {
     background-position-y: 640px;
   }
+}
+
+.plane {
+  position: absolute;
+  bottom: 100px;
+  max-width: 250px;
+  pointer-events: none;
+  filter: drop-shadow(10px 10px 0 rgba(0, 0, 0, 0.5));
+  transition: 5s;
+}
+
+section:active .plane {
+  max-width: 500px;
+  filter: drop-shadow(200px 200px 0 rgba(0, 0, 0, 0));
 }
